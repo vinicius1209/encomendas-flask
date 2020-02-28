@@ -13,7 +13,7 @@ migrate = Migrate(app, db)
 
 # Login manager
 login_manager = LoginManager(app)
-login_manager.login_view = 'login'
+login_manager.login_view = 'default_bp.login'
 
 from .admin import admin_bp
 from .default import default_bp
